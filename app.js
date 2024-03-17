@@ -38,8 +38,8 @@ const moveLens = (e) => {
 const imageZoom = (img, resultDiv, lens) => {
     resultDiv.style.backgroundImage = `url(${img.src})`;
     resultDiv.style.backgroundSize = `${img.width * xScallingFactor}px ${img.height * yScallingFactor}px`;
-
-    img.addEventListener("click", moveLens)
+    lens.addEventListener("mousemove", moveLens);
+    img.addEventListener("mousemove", moveLens);
 
   }
 imageZoom(img, resultDiv, lens);
